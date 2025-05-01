@@ -31,7 +31,7 @@ A modular time tracking system for managing **activities**, **projects**, and **
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-org/time-tracking-app.git
+   git clone https://github.com/annush-hub/TestTask_Anna_Bondarenko.git
    cd time-tracking-app
    ```
 
