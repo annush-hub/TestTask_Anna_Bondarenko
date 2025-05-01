@@ -1,0 +1,85 @@
+# .NET Core
+bin/
+obj/
+
+# User-specific files
+.vscode/
+.idea/
+
+# Windows image file caches
+Thumbs.db
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer logs
+*.cab
+*.msi
+*.msm
+*.msp
+
+# User-specific files for Visual Studio for Mac
+.vscode/
+
+# JetBrains Rider IDE
+.idea/
+
+# User-specific files for Visual Studio
+.vs/
+
+# ASP.NET Core
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Staging.json
+
+# dotnet tool manifest
+.dotnet-tools/
+
+# Npm packages (if applicable)
+node_modules/
+
+# IDE generated files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# JetBrains Rider files
+.idea/
+
+# User-specific files for Visual Studio Code
+.vscode/
+
+# ASP.NET Core temporary files
+wwwroot/
+
+# Build output
+/bin/
+/obj/
+
+# Visual Studio for Mac
+.vscode/
+
+# JetBrains Rider files
+.idea/
+
+# DotCover
+.idea/
+
+# Backup files
+*~
+*.bak
+*.swp
+
+# Temporary files
+*.tmp

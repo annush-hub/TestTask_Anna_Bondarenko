@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TimeTracking.API</name>
+    </assembly>
+    <members>
+        <member name="T:Time_Tracking_App.Controllers.ActivitiesController">
+            <summary>
+            Controller for managing activities and time tracking.
+            </summary>
+        </member>
+        <member name="M:Time_Tracking_App.Controllers.ActivitiesController.Create(TimeTracking.Application.DTOs.CreateActivityDto)">
+            <summary>
+            Creates a new activity and sends it to a client service.
+            </summary>
+            <param name="activityCreate">The activity creation DTO.</param>
+            <returns>The created activity DTO.</returns>
+        </member>
+        <member name="M:Time_Tracking_App.Controllers.ActivitiesController.GetActivityById(System.Guid)">
+            <summary>
+            Gets an activity by its unique ID.
+            </summary>
+            <param name="id">The activity ID.</param>
+            <returns>The activity DTO.</returns>
+        </member>
+        <member name="M:Time_Tracking_App.Controllers.ActivitiesController.GetByPersonAndDate(System.Guid,System.DateTime)">
+            <summary>
+            Gets time tracking entries for a specific person on a given date.
+            </summary>
+            <param name="personId">The person’s ID.</param>
+            <param name="date">The date of the activity.</param>
+            <returns>List of time tracking entries.</returns>
+        </member>
+        <member name="M:Time_Tracking_App.Controllers.ActivitiesController.GetTimeTrackingByWeek(System.Guid,System.Int32,System.Int32)">
+            <summary>
+            Gets time tracking entries for a specific employee by year and ISO week number.
+            </summary>
+            <param name="employeeId">The employee's ID.</param>
+            <param name="year">The year.</param>
+            <param name="weekNumber">The ISO week number.</param>
+            <returns>List of time tracking entries or NoContent if none found.</returns>
+        </member>
+        <member name="T:Time_Tracking_App.Controllers.ProjectsController">
+            <summary>
+            Controller for managing project-related operations.
+            </summary>
+        </member>
+        <member name="M:Time_Tracking_App.Controllers.ProjectsController.Create(TimeTracking.Application.DTOs.CreateProjectDto)">
+            <summary>
+            Creates a new project.
+            </summary>
+            <param name="projectDto">Project creation data.</param>
+            <returns>The created project.</returns>
+        </member>
+        <member name="M:Time_Tracking_App.Controllers.ProjectsController.GetById(System.Guid)">
+            <summary>
+            Gets a project by its ID.
+            </summary>
+            <param name="id">Project ID.</param>
+            <returns>The project with the given ID.</returns>
+        </member>
+        <member name="M:Time_Tracking_App.Controllers.ProjectsController.GetProjects">
+            <summary>
+            Gets a list of all projects.
+            </summary>
+            <returns>List of project DTOs.</returns>
+        </member>
+        <member name="M:Time_Tracking_App.Controllers.ProjectsController.Update(System.Guid,TimeTracking.Application.DTOs.CreateProjectDto)">
+            <summary>
+            Updates an existing project.
+            </summary>
+            <param name="id">Project ID.</param>
+            <param name="updateDto">Updated project data.</param>
+            <returns>The updated project or NotFound if it doesn’t exist.</returns>
+        </member>
+        <member name="M:Time_Tracking_App.Controllers.ProjectsController.Delete(System.Guid)">
+            <summary>
+            Deletes a project by its ID.
+            </summary>
+            <param name="id">Project ID.</param>
+            <returns>NoContent if deleted successfully; otherwise NotFound.</returns>
+        </member>
+    </members>
+</doc>
